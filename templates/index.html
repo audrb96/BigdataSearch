@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/fb1f288996.js" crossorigin="anonymous"></script>
+        <script src="../static/index.js"></script>
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron mt-s3">
+                <div class="title">Bigdata(korean)</div>
+                <p class = "click">빅데이터 소식과 정보를 얻어보세요!</p>
+                    <div class="search-box">
+                        <div class = "prefix-box">
+                            <input type="text" id ="prefix" name = "prefix" placeholder="search" required>
+                            <div class="search-btn" id="search" type="submit" onclick="suggestion()">
+                                 <i class="fas fa-search"></i>
+                            </div>
+                            <div type="button" class="cancel-btn" id="reset" onclick="reset()">
+                                <i class="fas fa-times"></i>
+                             </div>
+                        </div>
+                    </div>
+                <div id="context" class ="context">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
